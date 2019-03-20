@@ -1,19 +1,19 @@
-'use strict';
+"use strict";
 
-const app = require('express')();
-const port = 3000;
+const app = require("express")();
+const port = 80;
 
-module.exports = (cb) => {
-  const callbackUrl = 'http://localhost:3000/callback';
+module.exports = cb => {
+  const callbackUrl = "http://localhost:3000/callback";
 
-  app.listen(port, (err) => {
+  app.listen(port, err => {
     if (err) return console.error(err);
 
     console.log(`Express server listening at http://localhost:${port}`);
 
     cb({
       app,
-      callbackUrl,
+      callbackUrl
     });
   });
 };

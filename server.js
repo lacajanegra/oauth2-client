@@ -1,7 +1,6 @@
 "use strict";
 
 const app = require("express")();
-
 const port = process.env.PORT || 80;
 
 module.exports = cb => {

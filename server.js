@@ -1,7 +1,7 @@
 "use strict";
 
 const app = require("express")();
-const port = process.env.PORT || 80;
+const port = process.env.PORT;
 
 module.exports = cb => {
   const callbackUrl = "http://localhost:3000/callback";

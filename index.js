@@ -1,7 +1,7 @@
 'use strict';
 
 const createApplication = require('./server');
-const simpleOauthModule = require('..');
+const simpleOauthModule = require('simple-oauth2');
 const request = require('request');
 
 createApplication(({ app, callbackUrl }) => {
